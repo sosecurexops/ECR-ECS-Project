@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "No installation needed for static HTML Website Hosting"
+      - echo "No installation needed for static HTML"
 
   pre_build:
     commands:
