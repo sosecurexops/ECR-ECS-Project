@@ -1,4 +1,4 @@
-version: 0.2
+#version: 0.2
 
 phases:
   install:
@@ -21,8 +21,8 @@ phases:
   post_build:
     commands:
       - echo "Build complete - $(ls -la output/)" 
-      - echo "Invalidating Cloud Front Cache.. "
-      - aws cloudfront create-invalidation --distribution-id E2V4Z0MVMLHQ5A --paths "/*"
+      #- echo "Invalidating Cloud Front Cache.. "
+      #- aws cloudfront create-invalidation --distribution-id E2V4Z0MVMLHQ5A --paths "/*"
       
 artifacts:
   files:
